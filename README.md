@@ -4,7 +4,7 @@
 ![React](https://img.shields.io/badge/React-18-61DAFB?logo=react&logoColor=white)
 ![Dexie](https://img.shields.io/badge/Dexie-IndexedDB-blue)
 ![Zustand](https://img.shields.io/badge/State-Zustand-green)
-![License](https://img.shields.io/badge/license-MIT-green)
+
 
 > A modern, offline-capable recruitment management platform built with React, Dexie (IndexedDB), Zustand, and MSW.  
 > TalentFlow manages jobs, candidates, applications, and assessments — all running 100% locally in the browser.
