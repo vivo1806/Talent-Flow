@@ -1,0 +1,371 @@
+/* ---------------- Loading State ---------------- */
+.candidates-loading {
+  padding: 2rem;
+  text-align: center;
+}
+
+/* ---------------- Main Container ---------------- */
+.candidates-page-container {
+  padding: 2rem;
+  max-width: 1800px;
+  margin: 0 auto;
+}
+
+/* ---------------- Header Section ---------------- */
+.candidates-page-header {
+  margin-bottom: 2rem;
+}
+
+.candidates-page-title {
+  margin-bottom: 1rem;
+}
+
+/* ---------------- Search and Filter Bar ---------------- */
+.candidates-filter-bar {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+/* Search Input */
+.candidates-search-input {
+  flex: 1;
+  min-width: 250px;
+  padding: 0.75rem 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  background-color: #ffffff;
+  color: #111827;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+  transition: all 0.2s ease;
+}
+
+.candidates-search-input::placeholder {
+  color: #9ca3af;
+}
+
+.candidates-search-input:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+  outline: none;
+}
+
+/* Status Filter Dropdown */
+.candidates-status-filter {
+  padding: 0.75rem 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  min-width: 180px;
+  background-color: #ffffff;
+  color: #111827;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+  appearance: none;
+  background-image: url("data:image/svg+xml;utf8,<svg fill='none' stroke='%236b7280' stroke-width='2' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'><path stroke-linecap='round' stroke-linejoin='round' d='M19 9l-7 7-7-7'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 0.75rem center;
+  background-size: 1rem;
+  transition: all 0.2s ease;
+}
+
+.candidates-status-filter:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+  outline: none;
+}
+
+.candidates-status-filter:hover {
+  border-color: #9ca3af;
+}
+
+/* ---------------- Results Info ---------------- */
+.candidates-results-info {
+  font-size: 0.875rem;
+  color: #6b7280;
+  margin-bottom: 1rem;
+}
+
+/* ---------------- Error Message ---------------- */
+.candidates-error {
+  padding: 1rem;
+  background-color: #fee2e2;
+  color: #991b1b;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+}
+
+/* ---------------- Kanban Board View ---------------- */
+.candidates-kanban-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.kanban-column-header {
+  padding: 0.75rem 1rem;
+  border-radius: 8px 8px 0 0;
+  font-weight: bold;
+  text-transform: capitalize;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.kanban-column-count {
+  background-color: white;
+  padding: 0.25rem 0.5rem;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+}
+
+.kanban-column-body {
+  border: 1px solid #e5e7eb;
+  border-top: none;
+  border-radius: 0 0 8px 8px;
+  min-height: 200px;
+  background-color: #f9fafb;
+  padding: 1rem;
+}
+
+.kanban-column-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.kanban-empty-state {
+  text-align: center;
+  padding: 2rem;
+  color: #9ca3af;
+}
+
+/* ---------------- List View ---------------- */
+.candidates-list-view {
+  display: grid;
+  gap: 1rem;
+}
+
+.candidates-empty-state {
+  text-align: center;
+  padding: 3rem;
+  color: #6b7280;
+  background-color: white;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+}
+
+/* ---------------- Pagination ---------------- */
+.candidates-pagination {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.pagination-btn {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.pagination-btn:not(:disabled) {
+  background-color: #3b82f6;
+  color: white;
+  cursor: pointer;
+}
+
+.pagination-btn:hover:not(:disabled) {
+  background-color: #2563eb;
+}
+
+.pagination-btn:disabled {
+  background-color: #f3f4f6;
+  color: #9ca3af;
+  cursor: not-allowed;
+}
+
+.pagination-info {
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+
+/* ---------------- Candidate Card ---------------- */
+.candidate-card {
+  background-color: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 1.25rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: all 0.2s ease;
+}
+
+.candidate-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+}
+
+.candidate-card-title {
+  margin: 0 0 0.5rem 0;
+  font-size: 1rem;
+  color: #111827;
+  font-weight: 600;
+}
+
+.candidate-card-text {
+  margin: 0.25rem 0;
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+
+.candidate-card-position {
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #374151;
+}
+
+.candidate-card-salary {
+  margin: 0.25rem 0;
+  font-size: 0.875rem;
+  color: #059669;
+  font-weight: 500;
+}
+
+.candidate-card-actions {
+  margin-top: 0.75rem;
+}
+
+/* ---------------- Skills Section ---------------- */
+.candidate-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+  margin-bottom: 0.75rem;
+}
+
+.candidate-skill-tag {
+  padding: 0.125rem 0.5rem;
+  background-color: #f3f4f6;
+  color: #374151;
+  border-radius: 4px;
+  font-size: 0.75rem;
+}
+
+.candidate-skills-more {
+  font-size: 0.75rem;
+  color: #6b7280;
+}
+
+/* ---------------- Status Badge ---------------- */
+.candidate-status-badge {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  margin-bottom: 0.75rem;
+  text-transform: capitalize;
+}
+
+.status-new {
+  background-color: #dbeafe;
+  color: #1e40af;
+}
+
+.status-screening {
+  background-color: #fef3c7;
+  color: #92400e;
+}
+
+.status-interview {
+  background-color: #e0f2fe;
+  color: #075985;
+}
+
+.status-hired {
+  background-color: #dcfce7;
+  color: #166534;
+}
+
+.status-rejected {
+  background-color: #fee2e2;
+  color: #991b1b;
+}
+
+/* ---------------- Status Dropdown ---------------- */
+.candidate-status-select {
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+  background-color: #ffffff;
+  color: #111827;
+  appearance: none;
+  transition: all 0.2s ease;
+}
+
+.candidate-status-select:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+  outline: none;
+}
+
+/* ---------------- Notes & Delete Buttons ---------------- */
+.candidate-notes-toggle {
+  width: 100%;
+  padding: 0.5rem;
+  background-color: #f3f4f6;
+  color: #374151;
+  border: 1px solid #e5e7eb;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.875rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  transition: all 0.2s ease;
+}
+
+.candidate-notes-toggle:hover {
+  background-color: #e5e7eb;
+}
+
+.candidate-delete-btn {
+  width: 100%;
+  padding: 0.5rem;
+  background-color: #fee2e2;
+  color: #991b1b;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.candidate-delete-btn:hover {
+  background-color: #fecaca;
+}
+
+.candidate-notes-section {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #e5e7eb;
+}
+
+.candidate-applied-date {
+  margin-top: 0.75rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid #e5e7eb;
+  font-size: 0.75rem;
+  color: #9ca3af;
+}

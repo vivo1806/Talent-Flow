@@ -1,0 +1,364 @@
+.assessments-page-container {
+  color: #111;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: "Inter", system-ui, sans-serif;
+}
+
+.assessments-page-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: #1f2937;
+}
+
+.job-selection-container {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  border-radius: 10px;
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.03);
+}
+
+.job-selection-label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #374151;
+}
+
+.job-selection-select {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: white;
+  transition: border-color 0.2s;
+}
+
+.job-selection-select:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.15);
+}
+
+.assessment-form-container {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 1.75rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.assessment-form-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: #1f2937;
+}
+
+.form-field {
+  margin-bottom: 1.25rem;
+}
+
+.form-label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  color: #374151;
+}
+
+.form-input,
+.form-textarea {
+  width: 100%;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  padding: 0.75rem;
+  font-size: 1rem;
+  background: #fff;
+  transition: border-color 0.2s;
+}
+
+.form-input:focus,
+.form-textarea:focus {
+  border-color: #2563eb;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.15);
+}
+
+.form-textarea {
+  resize: vertical;
+}
+
+.form-grid-2col {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.assessment-error {
+  background: #fee2e2;
+  border: 1px solid #fca5a5;
+  color: #991b1b;
+  padding: 0.75rem;
+  border-radius: 8px;
+  margin-bottom: 1.25rem;
+}
+
+.questions-container {
+  background: #f9fafb;
+  padding: 1.5rem;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+}
+
+.questions-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.25rem;
+}
+
+.add-question-btn {
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.add-question-btn:hover {
+  background: #1d4ed8;
+}
+
+.questions-empty-state {
+  text-align: center;
+  padding: 1rem;
+  color: #6b7280;
+  font-style: italic;
+}
+
+.questions-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.question-card {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 1.25rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+
+.question-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.question-card-header h4 {
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.remove-question-btn {
+  background: none;
+  border: none;
+  color: #ef4444;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.remove-question-btn:hover {
+  text-decoration: underline;
+}
+
+.question-field {
+  margin-bottom: 1rem;
+}
+
+.question-label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  color: #374151;
+}
+
+.question-select,
+.question-input,
+.question-textarea,
+.question-option-input {
+  width: 100%;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.95rem;
+  background: #fff;
+}
+
+.question-select:focus,
+.question-input:focus,
+.question-textarea:focus {
+  border-color: #2563eb;
+  outline: none;
+}
+
+.correct-answer-label {
+  font-weight: 500;
+  margin-top: 0.75rem;
+  display: block;
+}
+
+.action-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.submit-btn {
+  background: #16a34a;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 0.75rem 1.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.submit-btn:hover {
+  background: #15803d;
+}
+
+.cancel-btn {
+  background: #f3f4f6;
+  color: #374151;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  padding: 0.75rem 1.25rem;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.cancel-btn:hover {
+  background: #e5e7eb;
+}
+
+.delete-assessment-btn {
+  background: #ef4444;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 0.75rem 1.25rem;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.delete-assessment-btn:hover {
+  background: #dc2626;
+}
+
+.existing-assessments-section {
+  margin-top: 3rem;
+}
+
+.existing-assessments-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: #1f2937;
+}
+
+.assessments-grid {
+  display: grid;
+  gap: 1.25rem;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.assessment-card {
+  border: 1px solid #e5e7eb;
+  background: #fff;
+  border-radius: 10px;
+  padding: 1.25rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.assessment-card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.assessment-card-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.assessment-card-info {
+  font-size: 0.95rem;
+  color: #4b5563;
+  margin: 0.25rem 0;
+}
+
+.assessment-card-meta {
+  display: flex;
+  gap: 1rem;
+  font-size: 0.9rem;
+  color: #6b7280;
+  margin-top: 0.5rem;
+}
+
+.edit-assessment-btn {
+  align-self: flex-start;
+  margin-top: 1rem;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.edit-assessment-btn:hover {
+  background: #1d4ed8;
+}
+
+.assessments-empty-state {
+  text-align: center;
+  padding: 2rem;
+  color: #6b7280;
+  border: 1px dashed #d1d5db;
+  border-radius: 10px;
+}
+
+* {
+  color: #000 !important;
+}
+
+.add-question-btn,
+.submit-btn,
+.delete-assessment-btn,
+.edit-assessment-btn {
+  color: #fff !important;
+}
+
+.questions-empty-state,
+.assessment-card-info,
+.assessment-card-meta {
+  color: #111 !important;
+}

@@ -1,0 +1,59 @@
+.home-page-container {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.home-page-title {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.home-page-subtitle {
+  font-size: 1.25rem;
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+.home-page-nav {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  position: sticky;
+  flex-wrap: wrap;
+}
+
+.home-page-link {
+  display: inline-block;
+  padding: 1rem 2rem;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+
+.home-page-link.jobs {
+  background-color: #3b82f6;
+}
+
+.home-page-link.candidates {
+  background-color: #10b981;
+}
+
+.home-page-link.assessments {
+  background-color: #8b5cf6;
+}
+
+.home-page-link.jobs:hover {
+  background-color: #2563eb;
+}
+
+.home-page-link.candidates:hover {
+  background-color: #059669;
+}
+
+.home-page-link.assessments:hover {
+  background-color: #7c3aed;
+}
