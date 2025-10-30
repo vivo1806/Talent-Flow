@@ -1,4 +1,4 @@
-# 🚀 TalentFlow – Local Talent Management System
+#  TalentFlow – Local Talent Management System
 
 ![Vite](https://img.shields.io/badge/Vite-5.0-646CFF?logo=vite&logoColor=white)
 ![React](https://img.shields.io/badge/React-18-61DAFB?logo=react&logoColor=white)
@@ -11,14 +11,14 @@
 
 ---
 
-## 🧠 Core Idea
+## Core Idea
 
 TalentFlow is a **self-contained talent management system** where everything — data persistence, API mocks, and UI — runs locally.  
 It mimics a full production-grade HRM system (like Lever or Greenhouse) but with **no backend dependency**.
 
 ---
 
-## ⚙️ Tech Stack
+##  Tech Stack
 
 | Layer | Technology | Purpose |
 |-------|-------------|----------|
@@ -31,7 +31,7 @@ It mimics a full production-grade HRM system (like Lever or Greenhouse) but with
 
 ---
 
-## 🧩 Technical Decisions Summary
+## Technical Decisions Summary
 
 | Area | Decision | Reason |
 |------|-----------|--------|
@@ -44,7 +44,7 @@ It mimics a full production-grade HRM system (like Lever or Greenhouse) but with
 
 ---
 
-## 🏗️ Architecture Overview
+##  Architecture Overview
 
 ```text
 ┌─────────────────────────────┐
@@ -56,7 +56,7 @@ It mimics a full production-grade HRM system (like Lever or Greenhouse) but with
 │  └───────────────────────┘  │ │
 └─────────────────────────────┘ │
         ▲                        │
-        │ gRPC / REST mock (MSW) │
+        │ http mock (MSW) │
         ▼                        │
 ┌─────────────────────────────┐  │
 │        Mock API Layer       │  │
@@ -66,7 +66,7 @@ It mimics a full production-grade HRM system (like Lever or Greenhouse) but with
 
 ---
 
-## 💾 Local Database Schema (Dexie)
+##  Local Database Schema (Dexie)
 
 ```ts
 jobs:        id, title, department, location, status, createdAt
@@ -79,7 +79,7 @@ Each entity supports full CRUD operations locally using Dexie transactions.
 
 ---
 
-## 🧱 Core Features
+##  Core Features
 
 ### 1. Jobs Management
 - Create, edit, delete, archive jobs.
@@ -100,12 +100,12 @@ Each entity supports full CRUD operations locally using Dexie transactions.
 - Add sections & multiple question types:
   - Single-choice, multi-choice, short/long text, numeric, file upload.
 - Live preview pane for dynamic rendering.
-- Validation rules and conditional questions.
+- Validation rules 
 - All builder state stored in IndexedDB.
 
 ---
 
-## 🧠 Flow Example: Creating a Job → Candidate → Application
+##  Flow Example: Creating a Job → Candidate → Application
 
 1. User creates a new **Job** → stored in `jobs` table.
 2. User adds a **Candidate** → stored in `candidates`.
@@ -115,7 +115,7 @@ Each entity supports full CRUD operations locally using Dexie transactions.
 
 ---
 
-## 🧰 Common Setup & Debugging Issues
+##  Common Setup & Debugging Issues
 
 | Issue | Cause | Fix |
 |-------|--------|-----|
@@ -127,7 +127,7 @@ Each entity supports full CRUD operations locally using Dexie transactions.
 
 ---
 
-## 🧠 Challenges Solved
+##  Challenges Solved
 
 - Offline persistence without any backend.
 - Complex relational data (job–application–candidate) entirely local.
@@ -170,13 +170,3 @@ src/
 
 ---
 
-## 📜 License
-
-This project is licensed under the **MIT License**.
-
----
-
-## 👤 Author
-
-**Master** – BTech Computer Science  
-[GitHub](https://github.com/your-username)
